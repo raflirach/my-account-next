@@ -1,0 +1,8 @@
+.navBody {
+  @apply relative py-3 mx-4
+    lg:px-3 lg:border-0 lg:mx-3;
+}
+
+.navContent {
+  @apply relative flex items-center;
+}

@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply antialiased text-gray-500 dark:text-white bg-white dark:bg-gray-900;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+nav {
+  @apply antialiased top-0 sticky z-0
+    mx-auto max-h-24  
+    border-b border-gray-900/10 dark:border-gray-300/10 
+  text-gray-900 dark:text-white 
+  bg-white dark:bg-gradient-to-tr from-gray-900 to-gray-800
+    transition duration-500;
+}
+
+.login-input {
+  @apply w-full h-10 px-3 rounded outline-none  
+    focus:animate-pulse focus:dark:animate-none 
+    bg-slate-800 hover:bg-slate-700 dark:bg-white
+    text-white dark:text-slate-900
+    border-0 dark:border
+    shadow-none dark:shadow-md;
+}
+
+.btn-login {
+  @apply flex gap-3 items-center py-2 pl-4 pr-1 rounded
+    hover:animate-pulse 
+    dark:bg-none bg-sky-800 hover:bg-sky-500 
+    font-bold dark:text-gray-300;
+}
